@@ -1,0 +1,18 @@
+/*heading one styling*/
+h1{
+    text-align: center;
+    color: cornflowerblue;
+    text-transform: uppercase;
+}
+
+h2{
+    background-color: cornflowerblue;
+    font-family: "Brush Script MT", cursive;
+}
+
+p{
+    color: darkblue;
+    background-color: lightcyan;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+}
