@@ -1,0 +1,28 @@
+.img-left { 
+
+    float: left;
+    margin-right: 20px;
+    border: solid 2px darkorchid
+}
+
+.top-border{
+     border: solid 4px turquoise
+}
+
+.bottom-border{
+     border: solid 6px plum
+}
+
+.responsive{
+    max-width: 100%;
+}
+
+footer {
+background-image: url(images/treasure.jpg);
+}
+
+.img-right {
+    float: right;
+    margin-left: 20px;
+    
+}
