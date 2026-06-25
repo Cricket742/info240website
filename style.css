@@ -36,7 +36,7 @@ p{
     .item12 { grid-area: item12; }
 
     .wrapper {
-      max-width: 900px;
+      max-width: 1200px;
       margin: 0px auto;
       display: grid;
       grid-template-columns: auto auto auto auto;
@@ -54,10 +54,30 @@ p{
       background-color: lightcyan;
       text-align: center;
       padding: 0px 0;
-      font-size: 30px;
       color: darkblue;
     }
     
+    
+
+    .item1{
+      background-image: url('images/fantasycastle.jpg');
+      background-size: 1200px 200px;
+      text-align: center;
+      font-size: 30px;
+    }
+
+    .item5, .item6, .item7, .item9, .item11, .item12{
+      font-size: 20px;
+    }
+
+    .columnlist {
+    column-count: 2;
+    }
+
+    .bigcolumnlist{
+      column-count: 4;
+    }
+
     .item2{display:none;}
     .item3{display:none;}
     .item4{display:none;}
