@@ -9,6 +9,11 @@ h2{
     background-color: cornflowerblue;
     font-family: "Brush Script MT", cursive;
 }
+/* add font but no background cause I use this for my grid */
+h3{
+text-align: center;
+font-family: "Brush Script MT", cursive;
+}
 
 p{
     color: darkblue;
@@ -16,3 +21,45 @@ p{
     font-family: Georgia, 'Times New Roman', Times, serif;
     letter-spacing: 1px;
 }
+
+    .item1 { grid-area: item1; }
+    .item2 { grid-area: item2; }
+    .item3 { grid-area: item3; }
+    .item4 { grid-area: item4; }
+    .item5 { grid-area: item5; }
+    .item6 { grid-area: item6; }
+    .item7 { grid-area: item7; }
+    .item8 { grid-area: item8; }
+    .item9 { grid-area: item9; }
+    .item10 { grid-area: item10; }
+    .item11 { grid-area: item11; }
+    .item12 { grid-area: item12; }
+
+    .wrapper {
+      max-width: 900px;
+      margin: 0px auto;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      grid-template-rows: 1fr 1fr ifr;
+      grid-template-areas:
+        'item1 item1 item1 item1'
+        'item5 item6 item7 item7'
+        'item9 item6 item11 item12';
+      gap: 10px;
+      background-color: cornflowerblue;
+      padding: 10px;
+    }
+
+    .wrapper > div {
+      background-color: lightcyan;
+      text-align: center;
+      padding: 0px 0;
+      font-size: 30px;
+      color: darkblue;
+    }
+    
+    .item2{display:none;}
+    .item3{display:none;}
+    .item4{display:none;}
+    .item8{display:none;}
+    .item10{display:none;}
