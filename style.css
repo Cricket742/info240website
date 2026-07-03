@@ -10,7 +10,7 @@ h2{
     font-family: "Brush Script MT", cursive;
 }
 /* add font but no background cause I use this for my grid */
-h3{
+.tableh3{
 text-align: center;
 font-family: "Brush Script MT", cursive;
 }
@@ -61,7 +61,7 @@ p{
 
     .item1{
       background-image: url('images/fantasycastle.jpg');
-      background-size: 1200px 200px;
+      background-size: 1200px 500px;
       text-align: center;
       font-size: 30px;
     }
@@ -83,3 +83,21 @@ p{
     .item4{display:none;}
     .item8{display:none;}
     .item10{display:none;}
+
+/* Table Styling */
+  .bordercollapsetable {
+  border-collapse: collapse;
+  }
+  /* add the border */
+  table, table td{
+  border: 5px solid cornflowerblue;
+  }
+
+  /* for rowspan */
+  .remove{
+  display:none;
+  }
+  /* center colspancell */
+  .centercell{
+    text-align: center;
+  }
