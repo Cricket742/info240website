@@ -72,6 +72,7 @@ p{
 
     .columnlist {
     column-count: 2;
+    column-gap: 25px;
     }
 
     .bigcolumnlist{
@@ -100,4 +101,19 @@ p{
   /* center colspancell */
   .centercell{
     text-align: center;
+  }
+
+  /* hover color */
+  tr:hover {
+  background-color: lightcyan;
+  }
+
+  /* Style ordered list */
+  ol {
+    list-style-type: upper-roman;
+  }
+  /* Style unordered list */
+  ul {
+    list-style-image: url(images/sword.png);
+    
   }
