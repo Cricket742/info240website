@@ -7,12 +7,12 @@ h1{
 
 h2{
     background-color: cornflowerblue;
-    font-family: "Brush Script MT", cursive;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 /* add font but no background cause I use this for my grid */
 .tableh3{
 text-align: center;
-font-family: "Brush Script MT", cursive;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 p{
@@ -112,8 +112,93 @@ p{
   ol {
     list-style-type: upper-roman;
   }
-  /* Style unordered list */
-  ul {
+  /* Style some unordered list */
+  .swordul {
     list-style-image: url(images/sword.png);
     
+  }
+
+  /* Navbar Styling */
+  nav.primary-menu{
+    width: 90%;
+    margin: auto;
+    border: solid 5px darkblue;
+    text-align: center;
+    background-color: #6495ed;
+  }
+  .primary-menu ul{
+ /* display: inline-block; */
+    margin: 0px; 
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .primary-menu li{
+    list-style-type: none;
+  }
+
+  .primary-menu a{
+    color: #000;
+    text-decoration: none;
+    display: block; 
+    width: 100px;
+    padding: 8px 0px;
+  }
+
+  .primary-menu a:hover{
+  background-color: darkblue;
+  color: #fff;
+  text-decoration: overline underline;
+  }
+
+  /* Style Form */
+
+  /* Give Form a Background Image and center it */
+  form{
+    background-image: url(images/canvas.jpg);
+    background-size: 500px 600px;
+    color: black;
+    width: 500px;
+    margin: 100px auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  fieldset{
+  border: 1px solid darkorchid;
+  }
+  
+  .bluefieldset{
+    border: 1px solid skyblue;
+  }
+
+  legend{
+    width: 100%;
+    text-align: center;
+    
+  }
+
+  input[type=radio] {
+  color: lightskyblue;
+  border: none;
+  text-align: center;
+  margin-left: 30%;
+  }
+
+  input{
+    margin-left: 35%;
+  }
+
+  /* Style buttons */
+  input[type=submit],input[type=reset] {
+  background-color: cornflowerblue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  margin: 20px 60px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
   }

@@ -14,12 +14,22 @@
             text-indent: 20%;
         }
         /*this one is an id*/
-        #shape{
+        /* not using this anymore */
+        /* #shape{
             list-style-type: square;
-        }
+        } */
     </style>
 </head>
 <body style="background-color: cornsilk;">
+<nav class="primary-menu">
+  <ul>
+    <li><a href="index.html">Main Page</a></li>
+    <li><a href="classlist.html">Classes</a></li>
+    <li><a href="speciesList.html">Species</a></li>
+    <li><a href="backgroundlist.html">Backgrounds</a></li>
+    <li><a href="equipmentlist.html">Items</a></li>
+  </ul>
+</nav>
 <h1>Dungeons and Dragons</h1>
 <!--Start yapping about DnD here-->
     <img class="img-right top-border"  src="images/dragonhead.jpg" alt="image of a dragon's head" width="200">
@@ -166,7 +176,7 @@
         
         Here are some of my favorite publishers that make D&D supplements:
     </p>
-      <ul id="shape">
+      <ul class="swordul">
             <li><a href="https://magehandpress.com/">Mage Hand Press</a></li>
             <li><a href="https://hitpointpress.com/">Hitpoint Press</a></li>
             <li><a href="https://loottavern.com/">Loot Tavern</a></li>
@@ -180,7 +190,7 @@
           <div class="item5">
             <h3 class="tableh3">Species</h3>
             <p>What species is your character? Here are some options:</p>
-            <ul class="columnlist">
+            <ul class="columnlist swordul">
                 <li>Human</li>
                 <li>Elf</li>
                 <li>Orc</li>
@@ -194,7 +204,7 @@
         <div class="item6">
             <h3 class="tableh3">Class and Subclass</h3>
             <p>What does your character do? <br> The 13 official Classes are:</p>
-            <ul class="columnlist">
+            <ul class="columnlist swordul">
                 <li>Artificer</li>
                 <li>Barbarian</li>
                 <li>Bard</li>
@@ -210,7 +220,7 @@
                 <li>Wizard</li>
             </ul>
             <p>Some of my favorite homebrew classes:</p>
-            <ul class="columnlist">
+            <ul class="columnlist swordul">
                 <li>Alchemist</li>
                 <li>Binder</li>
                 <li>Blood Hunter</li>
@@ -223,7 +233,7 @@
         <div class="item7">
             <h3 class="tableh3">Stats and Skills</h3>
             <p>How strong or smart are you? <br> Here are all of the skills:</p>
-            <ul class="bigcolumnlist">
+            <ul class="bigcolumnlist swordul">
                 <li>Acrobatics</li>
                 <li>Animal Handling</li>
                 <li>Arcana</li>
@@ -271,7 +281,7 @@
         <li>Dragonborn</li>
         <li>Dwarf</li>
         <li>Elves
-            <ul>
+            <ul class="swordul">
                 <li>Drow Elf</li>
                 <li>High Elf</li>
                 <li>Wood Elf</li>
@@ -288,6 +298,53 @@
 
     </ol>
 
+    <form method="post" action="">
+        <fieldset>
+            <legend>Submit a Mechanic Idea</legend>
+
+            <fieldset class="bluefieldset">
+                <legend>Type of Mechanic</legend>
+                <input type="radio" id="dndclass" name="mechanictype" value="Class">
+                <label for="html">Class</label><br>
+                <input type="radio" id="dndspecies" name="mechanictype" value="Species">
+                <label for="css">Species</label><br>
+                <input type="radio" id="dndbackground" name="mechanictype" value="Background">
+                <label for="javascript">Background</label><br>
+                <input type="radio" id="dnditem" name="mechanictype" value="Item">
+                <label for="javascript">Item</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>I got this idea from...</legend>
+                <input list="idea">
+                <datalist id="idea">
+                    <option value="An Old Source Book">
+                    <option value="Myself">
+                    <option value="A Friend">
+                    <option value="A Website">
+                    <option value="A Third Party Supplement">
+                </datalist>
+            </fieldset>
+
+            <fieldset class="bluefieldset">
+                <legend>I got this Idea On:</legend>
+                <input type="date" id="ideadate" name="ideadate">
+            </fieldset>
+            
+            <fieldset>
+                <legend>Short Description</legend>
+                <textarea name="description" rows="4" cols="60"></textarea>
+            </fieldset>
+
+            <fieldset class="bluefieldset">
+            <legend>Upload an Image of your Idea:</legend>
+            <input type="file" id="myfile" name="myfile">
+            </fieldset>
+            <br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
 
 
         <!-- comment this out to pretty it up later -->
