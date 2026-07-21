@@ -1,5 +1,5 @@
 window.onload = function() {
-     fetch('characters.json')
+     fetch('playercharacters.json')
 
  .then(function(response) {
 
