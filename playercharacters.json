@@ -1,0 +1,20 @@
+[
+    {
+       "charactername": "Atticus",
+       "characterspecies": "Human",
+       "characterclass": "Craftsman",
+       "charactersubclass": "Thunderlord"
+    },
+    {
+        "charactername": "Ilune",
+        "characterspecies": "Aasmiar",
+        "characterclass": "Monk",
+        "charactersubclass": "Sunsoul"
+    },
+    {
+        "charactername": "Jackdaw",
+        "characterspecies": "Halfling",
+        "characterclass": "Rogue",
+        "charactersubclass": "Scout"
+    }
+]

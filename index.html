@@ -19,6 +19,7 @@
             list-style-type: square;
         } */
     </style>
+    <script src="scripts/fetch.js"></script>
 </head>
 <body style="background-color: cornsilk;">
 <nav class="primary-menu">
@@ -347,13 +348,14 @@
             <br>
             <!--javascript to play a sound when submit is hit  -->
             <audio id="magicspell" src="audio/magic-spell.mp3"></audio>
-            <script src="audioplay.js"></script>
+            <script src="scripts/audioplay.js"></script>
             <input type="submit" value="Submit"  onclick="playAudio()">
             <input type="reset" value="Reset">
         </fieldset>
     </form>
 
-
+    <h3>Some Example Characters</h3>
+    <div id='characters'></div>
         <!-- comment this out to pretty it up later -->
         <!-- <img class="responsive" src="images/dragonhead.jpg" width="800" alt="a dragon's head">
         <footer style="text-align:center;">
