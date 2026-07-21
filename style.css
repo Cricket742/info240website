@@ -202,3 +202,7 @@ p{
   font-size: 16px;
   cursor: pointer;
   }
+
+  .characters{
+    border: 5px solid cornflowerblue;
+  }
