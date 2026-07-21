@@ -17,7 +17,6 @@ for (var i = 0; i < json.length; i++) {
 
  }
 
- tableCode += '</tbody><tfoot><tr><td colspan="4">Source: Some Books API</td></tr></tfoot></table>';
 
  document.getElementById('characters').innerHTML = tableCode;
 
