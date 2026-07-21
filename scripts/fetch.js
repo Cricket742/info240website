@@ -13,7 +13,7 @@ var tableCode = '<table><caption>characters</caption><thead><tr><th>Name</th><th
 
 for (var i = 0; i < json.length; i++) {
 
- tableCode += '<tr><td>' + json[i].title + '</td><td>' + json[i].author + '</td><td>' + json[i].year + '</td><td>' + json[i].publisher + '</td></tr>';
+ tableCode += '<tr><td>' + json[i].charactername + '</td><td>' + json[i].characterspecies + '</td><td>' + json[i].characterclass + '</td><td>' + json[i].charactersubclass + '</td></tr>';
 
  }
 
